@@ -1,0 +1,61 @@
+<html>
+<head>
+	<title>Dijkstra's Algorithm</title>
+	
+<!-- Font Awesome -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="assets/css/basicSimulation.css">
+<!-- Google Fonts -->
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400|Pacifico' rel='stylesheet' type='text/css'>
+
+
+</head>
+<body>
+
+<div class="page">
+  <div class="wrapper">
+    <div class="content-wrapper">
+      <div class="content">
+        <div class="iframe">
+			    <iframe width="850" height="570" frameborder="5" scrolling="no" marginheight="0" marginwidth="0" src="simulations/Djikstra/index.html"></iframe>
+		</div>
+      </div>
+    </div>
+    <div class="sidebar">
+      <h2 style="background: rgba(255,255,255,0.5), position: fixed;">Dijkstra's Algorithm</h2>
+      <p><br>
+			The Dijkstra’s Algorithm starts with a source vertex ‘s‘ and explores the whole graph. We will use the following elements to compute the shortest paths –<br>
+			<ul style="padding-left: 2em;">
+				<li>Priority Queue Q.</li>
+				<li>An array D, which keeps the record of the total distance from starting vertex s to all other vertices.</li>
+			</ul><br>
+			Just like the other graph search algorithms, Dijkstra’s Algorithm is best understood by listing out the algorithm in a step-by-step process –<br>
+			<ul style="padding-left: 2em;">
+				<li>The Initialisation –
+					<ol style="padding-left: 2em;">
+						<li>D[s], which is the shortest distance to s is set to 0. The distance from the source to itself is 0.</li>
+						<li>For all the other vertices V, D[V] is set to infinity as we do not have a path yet to them, so we simply say that the distance to them is infinity.</li>
+						<li>The Priority Queue Q, is constructed which is initially holds all the vertices of the graph. Each vertex V will have the priority D[V].</li>
+					</ol>
+				</li>
+				<li>The Algorithm –
+					<ol style="padding-left: 2em;">
+						<li>D[s], which is the shortest distance to s is set to 0. The distance from the source to itself is 0.</li>
+						<li>For all the vertices, v, adjacent to s, i.e., check if the edge from s → v gives a shorter path. This is done by checking the following condition –if, D[s] + (weight of edge s → v) < D[v], we found a new shorter route, so update D[v]
+							D[v] = D[s] + (weight of edge s → v)</li>
+						<li>Now pick the next minimum priority element from Q, and repeat the process until there are no elements left in Q.</li>
+					</ol>
+				</li>
+			</ul><br>
+
+
+
+
+		</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SOUL - user</title>
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- MetisMenu CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/metisMenu/3.0.3/metisMenu.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/sb-admin-2.custom.css" />
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0; background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">SOUL</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>Module completed</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span>
+                                </div>
+                                <div>You completed module def!...</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>Earned Points</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span>
+                                </div>
+                                <div>You've earned 20 points for...</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>Module completed</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span>
+                                </div>
+                                <div>You completed module abc!...</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>Read All</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-messages -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+        </nav>
+
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Hi USERNAME!</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            
+            <!--Modes menu-->
+            <ul class="nav nav-pills " style="margin: 0 0 1em 0;">
+              <li class="dropdown shadow" style="background: #f8f7f7c9;">
+                <a id="drop4" role="button" data-toggle="dropdown" href="BasicMode.html">Experiment Mode</a>
+              </li>
+              <li class="dropdown shadow" style="background: #f8f7f7c9;">
+                <a id="drop5" role="button" data-toggle="dropdown" href="FastTrackMode.html">Fast Track Mode </a> 
+              </li>
+              <li class="dropdown shadow" style="background: #f8f7f7c9;">
+                <a id="drop6" role="button" data-toggle="dropdown" href="gameModeDashboard">Game Mode </a> 
+              </li>
+              <li class="dropdown shadow" style="background: #f8f7f7c9;">
+                <a id="drop6" role="button" data-toggle="dropdown" href="certificationModeDashboard">Certification Mode </a> 
+              </li>
+            </ul>
+
+            <!-- /.progress bars -->
+            <div  class="row" style="text-align: center;">
+                <div class="col-lg-4 col-md-6 shadow" style="padding: 0 0 2em 1em; text-align: left;">
+                    <h4>Points Earned</h4>
+                    <h1 id="points-earned" style="font-family: 'Brayden Family'; font-size: 125px; text-align: center;  height: 200px; margin: 50px auto 0; color: #212d3a">100</h1>
+                </div>
+
+                <!--JavaScript for calculating percentage is at the end of the HTML page-->
+                <div class="col-lg-4 col-md-6 shadow" style="padding: 0 0 2em 1em; text-align: left; ">
+                    <h4>Badges Unlocked</h4>
+                    <div class="progress-pie-chart" data-percent="43">
+                      <div class="ppc-progress">
+                        <div class="ppc-progress-fill"></div>
+                      </div>
+                      <div class="ppc-percents">
+                        <div class="pcc-percents-wrapper">
+                          <span>%</span>
+                        </div>
+                      </div>
+                    </div>  
+                </div>
+
+                <div class="col-lg-4 col-md-6 shadow" style="padding: 0 0 2em 1em; text-align: left; ">
+                    <h4>Modules Completed</h4>
+                    <div class="progress-pie-chart" data-percent="43">
+                      <div class="ppc-progress">
+                        <div class="ppc-progress-fill"></div>
+                      </div>
+                      <div class="ppc-percents">
+                        <div class="pcc-percents-wrapper">
+                          <span>%</span>
+                        </div>
+                      </div>
+                    </div>  
+                </div>
+
+            </div>
+            
+            <!-- /.Second Section -->
+            <div  class="row" style="padding: 15px 15px 15px 15px;">
+
+                <div class="col-lg-6 col-md-6" >
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Game Mode progress
+                        </div>
+                        <div class="panel-body">
+                            <h4  style="color: #212d3a"><b>Recent</b></h4>
+                            <h4 style="line-height: 45px; font-family: 'Abril Fatface'; ">
+                                <i>Level 1:</i>Learned concept of force by using a pulley to pick objects.
+                            </h4>
+                            <h4  style="color: #212d3a"><b>Up Next</b></h4>
+                            <img  class="col-lg-3"src="img/dashboard/gMNext.png">
+                            <h4 class="col-lg-9" style="line-height: 30px; font-family: 'Abril Fatface';"><b>Level 2</b><br>Start learning the concept of Force.</h4>
+                        </div>
+                        <a href="gameModeDashboard.html">
+                            <div class="panel-footer">
+                                <span class="pull-left">Start Now!</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 " >
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Certification Progress
+                        </div>
+                        <div class="panel-body">
+                            <h4 class="col-lg-8" style="line-height: 24px; font-family: 'Abril Fatface';">Complete topics to unlock badges. Unlock all 20 to take the final exam and receive a certificate.</h4>
+                            <img  class="col-lg-4"src="img/dashboard/certProgress.png">
+                            <h4  style="color: #212d3a"><b>Recent Badges</b></h4>
+                            <img src="img/dashboard/progress.png">
+                        </div>
+                        <a href="certficationModeDashboard.html">
+                            <div class="panel-footer">
+                                <span class="pull-left">Start Now!</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+             <!-- /.badges unlocked -->
+            <div  class="row" style="padding: 15px 15px 15px 15px; text-align: center;">
+                <div class="col-lg-12 " >
+                    <img src="img/dashboard/badges.png" >
+                </div>
+            </div>
+
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-8">
+                    
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-clock-o fa-fw"></i> Timeline
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <ul class="timeline">
+                                <li>
+                                    <div class="timeline-badge"><i class="fa fa-check"></i>
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4 class="timeline-title">Task 4 completed</h4>
+                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> 11 hours</small>
+                                            </p>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>Congratulations on completing another task. Keep learning!</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="timeline-badge success"><i class="fa fa-graduation-cap"></i>
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4 class="timeline-title">Course completed</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>Congratulations on completing the Algorithms course.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline-inverted">
+                                    <div class="timeline-badge danger"><i class="fa fa-graduation-cap"></i>
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4 class="timeline-title">Points earned</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>You just earned 50 points for completing a course.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-8 -->
+                <div class="col-lg-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-bell fa-fw"></i> Notifications Panel
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-comment fa-fw"></i> New Comment
+                                    <span class="pull-right text-muted small"><em>4 minutes ago</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-envelope fa-fw"></i> Message Sent
+                                    <span class="pull-right text-muted small"><em>27 minutes ago</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-tasks fa-fw"></i> New Task
+                                    <span class="pull-right text-muted small"><em>43 minutes ago</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-tasks fa-fw"></i> New Task
+                                    <span class="pull-right text-muted small"><em>59 minutes ago</em>
+                                    </span>
+                                </a>
+                            </div>
+                            <!-- /.list-group -->
+                            <a href="#" class="btn btn-default btn-block">View All Alerts</a>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+
+                
+                    <div class="chat-panel panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-comments fa-fw"></i> Chat
+                            <div class="btn-group pull-right">
+                                <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-chevron-down"></i>
+                                </button>
+                                <ul class="dropdown-menu slidedown">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-refresh fa-fw"></i> Refresh
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-check-circle fa-fw"></i> Available
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-times fa-fw"></i> Busy
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-clock-o fa-fw"></i> Away
+                                        </a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-sign-out fa-fw"></i> Sign Out
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <ul class="chat">
+                                <li class="left clearfix">
+                                    <span class="chat-img pull-left">
+                                        <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar" class="img-circle" />
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <strong class="primary-font">Jack Sparrow</strong>
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 12 mins ago
+                                            </small>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="right clearfix">
+                                    <span class="chat-img pull-right">
+                                        <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle" />
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <small class=" text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 13 mins ago</small>
+                                            <strong class="pull-right primary-font">Bhaumik Patel</strong>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="left clearfix">
+                                    <span class="chat-img pull-left">
+                                        <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar" class="img-circle" />
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <strong class="primary-font">Jack Sparrow</strong>
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 14 mins ago</small>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="right clearfix">
+                                    <span class="chat-img pull-right">
+                                        <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle" />
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <small class=" text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 15 mins ago</small>
+                                            <strong class="pull-right primary-font">Bhaumik Patel</strong>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.panel-body -->
+                        <div class="panel-footer">
+                            <div class="input-group">
+                                <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message here..." />
+                                <span class="input-group-btn">
+                                    <button class="btn btn-warning btn-sm" id="btn-chat">
+                                        Send
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- /.panel-footer -->
+                    </div>
+                    <!-- /.panel .chat-panel -->
+                </div>
+                <!-- /.col-lg-4 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/metisMenu/3.0.3/metisMenu.min.js"></script>
+
+
+    <!-- Custom Theme JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/startbootstrap-sb-admin-2/3.3.7+1/js/sb-admin-2.min.js"></script>
+    
+    <script type="text/javascript">
+        //Progress Bar calculation
+        $(function(){
+          var $ppc = $('.progress-pie-chart'),
+            percent = parseInt($ppc.data('percent')),
+            deg = 360*percent/100;
+          if (percent > 50) {
+            $ppc.addClass('gt-50');
+          }
+          $('.ppc-progress-fill').css('transform','rotate('+ deg +'deg)');
+          $('.ppc-percents span').html(percent+'%');
+        });
+    </script>
+
+</body>
+
+</html>

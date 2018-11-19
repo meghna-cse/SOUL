@@ -1,0 +1,13 @@
+{
+"companyName": "Soul",
+"productName": "Pulley",
+"dataUrl": "Fricky.data.unityweb",
+"asmCodeUrl": "Fricky.asm.code.unityweb",
+"asmMemoryUrl": "Fricky.asm.memory.unityweb",
+"asmFrameworkUrl": "Fricky.asm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}

@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "firstlaw.data.unityweb",
+"asmCodeUrl": "firstlaw.asm.code.unityweb",
+"asmMemoryUrl": "firstlaw.asm.memory.unityweb",
+"asmFrameworkUrl": "firstlaw.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}

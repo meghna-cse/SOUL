@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "secondlaw.data.unityweb",
+"asmCodeUrl": "secondlaw.asm.code.unityweb",
+"asmMemoryUrl": "secondlaw.asm.memory.unityweb",
+"asmFrameworkUrl": "secondlaw.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}
