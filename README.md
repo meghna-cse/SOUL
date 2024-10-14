@@ -6,6 +6,7 @@
 SOUL (Simulation of Objects in Unity for Learning) is an interactive web application designed for simulating rigid bodies. It allows users to control and manipulate properties like weight, volume, and mass, observing the corresponding changes in real-time. The project aims to enhance learning through interactive simulation.
 ![projectImage_SOUL](https://github.com/meghna-cse/SOUL/assets/24985713/604d1942-b6d9-4bcd-8145-4c827a85d78a)
 
+Recorded Demo: [YouTube Link](https://youtu.be/wS4iQdZC6n0)
 
 ## Project Overview
 
